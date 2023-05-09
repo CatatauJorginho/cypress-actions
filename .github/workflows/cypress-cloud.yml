@@ -24,7 +24,7 @@ jobs:
           browser: electron
           record: true
           group: UI Electron
-          spec: ${{ github.event.inputs.cli }}
+          spec: ${{ github.event.inputs.spec }}
         env:
           CYPRESS_RECORD_KEY: e6830655-0714-481e-b7fe-1cd5fbd4d3bd
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }
@@ -44,7 +44,7 @@ jobs:
           browser: chrome
           record: true
           group: UI Chrome
-          spec: ${{ github.event.inputs.cli }}
+          spec: ${{ github.event.inputs.spec }}
         env:
           CYPRESS_RECORD_KEY: e6830655-0714-481e-b7fe-1cd5fbd4d3bd
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -64,7 +64,7 @@ jobs:
           browser: firefox
           record: true
           group: UI Firefox
-          spec: ${{ github.event.inputs.cli }}
+          spec: ${{ github.event.inputs.spec }}
     env:
           CYPRESS_RECORD_KEY: e6830655-0714-481e-b7fe-1cd5fbd4d3bd
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}      
