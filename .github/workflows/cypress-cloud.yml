@@ -26,7 +26,7 @@ jobs:
           spec: ${{ github.event.inputs.spec }}
         env:
           CYPRESS_RECORD_KEY: e6830655-0714-481e-b7fe-1cd5fbd4d3bd
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   cypress-electron-chrome:
     needs: cypress-electron-tests
     runs-on: ubuntu-latest
