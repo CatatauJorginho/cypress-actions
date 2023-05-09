@@ -19,7 +19,7 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v5.7.1
         with:
-          install-command: npm install
+          install-command: yarn install
           browser: electron
           record: true
           group: UI Electron
@@ -39,7 +39,7 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v5.7.1
         with:
-          install-command: npm install
+          install-command: yarn install
           browser: chrome
           record: true
           group: UI Chrome
@@ -59,7 +59,7 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v5.7.1
         with:
-          install-command: npm install
+          install-command: yarn install
           browser: firefox
           record: true
           group: UI Firefox
