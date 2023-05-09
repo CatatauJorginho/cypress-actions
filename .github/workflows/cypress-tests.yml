@@ -6,7 +6,7 @@ jobs:
   cypress-electron-tests:
     runs-on: ubuntu-latest
     steps:
-      - neme: Get code
+      - name: Get code
         uses: actions/checkout@v3.5.2
         
       - name: Install dependencies
